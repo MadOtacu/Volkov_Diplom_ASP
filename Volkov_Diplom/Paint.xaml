@@ -1,0 +1,20 @@
+﻿<Window x:Class="Volkov_Diplom.Paint"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Volkov_Diplom"
+        mc:Ignorable="d"
+        Title="Paint" Height="450" Width="800"
+        WindowState="Maximized"
+        WindowStyle="None">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/SpaceBackground.png"/>
+        </Grid.Background>
+        <InkCanvas x:Name="inkСanvas" Height="300" Width="400"/>
+        <Button x:Name="returnButton" Content="На главную" HorizontalAlignment="Left" Margin="26,0,0,10" Width="200" Height="30" VerticalAlignment="Bottom" Click="returnButton_Click"/>
+        <Button x:Name="showButton" Content="Показать трафарет" HorizontalAlignment="Center" Margin="200, 330, 0, 0" Width="200" Height="30" VerticalAlignment="Center" Click="showButton_Click"/>
+        <Button x:Name="hideButton" Content="Скрыть трафарет" HorizontalAlignment="Center" Margin="200,330,0,0" Width="200" Height="30" VerticalAlignment="Center" Click="hideButton_Click" Visibility="Collapsed"/>
+    </Grid>
+</Window>
